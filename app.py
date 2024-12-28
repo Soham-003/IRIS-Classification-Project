@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 from flask import Flask, request, jsonify, render_template
 
-application = Flask(__name__)
-app = application
+app = Flask(__name__)
+
 
 model_path = os.path.join(os.getcwd(), 'models', 'random_forest_model.pkl')
 preprocessor_path = os.path.join(os.getcwd(), 'models', 'preprocessor.pkl')
